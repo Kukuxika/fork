@@ -1,8 +1,6 @@
 {
-	"name": "firefly",
-	"compatibility_date": "2025-01-01",
-	"compatibility_flags": ["nodejs_compat"],
-	"assets": {
-		"directory": "./dist"
-	}
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "fork",
+	"compatibility_date": "2026-10-30",
+	"pages_build_output_dir": "./dist"
 }
