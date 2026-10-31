@@ -5,7 +5,7 @@ description: ""
 tags:
   - 测试
 category: 测试笔记
-draft: true
+draft: false
 ---
 
 # obsidian-sync-test4
