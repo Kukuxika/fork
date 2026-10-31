@@ -1,22 +1,22 @@
 ---
-title: Obsidian同步测试文章
-published: 2026-10-31
-description: 测试通过 Obsidian、GitHub 和 Cloudflare 自动发布博客文章。
+title: 我的第一篇博客
+published: 2026-10-30
+description: 欢迎来到 Marcus 的个人博客，从这里开始记录技术、学习与生活。
+image: ""
 tags:
-  - Obsidian
   - 博客
-category: 技术学习
+  - 随笔
+category: 测试笔记
+pinned: false
 draft: false
+lang: zh_CN
+slug: hello-world
 ---
 
-# 我自己的网站搭建成功了嘻嘻
+你好，我是 Marcus，欢迎来到我的个人博客。
 
-这是我使用 Obsidian 发布的第一篇测试文章。
+搭建这个小站，是想给自己的学习和生活留一个可以慢慢整理的地方。以后我会在这里记录作品集，AI技术实践、解决问题的过程，以及日常生活中值得记下的想法。写下来的内容不一定复杂，但希望每一篇都有真实的收获。
 
-我的博客已经成功部署到 Cloudflare Pages。
+这个博客使用 Astro 和 Firefly 主题搭建，文章以 Markdown 保存。对我来说，搭建只是开始，更重要的是持续学习、尝试和记录，把零散的经验积累成能够回看的笔记。
 
-现在正在测试 Obsidian 与 GitHub 的同步功能。
-
-如果你能在网站上看到这篇文章，就说明同步成功了！
-
-![](images/暮色月影下的梦幻棋境.png)
+这是第一篇文章，也是一段新旅程的起点。感谢你的来访，愿我们都能在探索中找到乐趣。
