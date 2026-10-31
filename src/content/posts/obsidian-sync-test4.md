@@ -11,3 +11,4 @@ draft: true
 # obsidian-sync-test4
 
 在这里开始写作。
+updated: 2026-10-31
