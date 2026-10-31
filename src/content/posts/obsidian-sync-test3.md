@@ -1,5 +1,5 @@
 ---
-title: 测:3
+title: 测试3
 published: 2026-10-31
 description: 测试模板功能
 tags:
