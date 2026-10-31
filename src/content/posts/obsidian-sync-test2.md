@@ -1,5 +1,5 @@
 ---
-title: Obsidian同步测试文章
+title: 测试2：Obsidian同步测试文章
 published: 2026-10-31
 description: 测试通过 Obsidian、GitHub 和 Cloudflare 自动发布博客文章。
 tags:
