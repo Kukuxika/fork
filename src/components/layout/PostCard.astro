@@ -31,6 +31,7 @@ const {
 	title,
 	url,
 	published,
+	updated,
 	tags,
 	category,
 	image,
@@ -146,6 +147,8 @@ const minutes = remarkPluginFrontmatter.minutes;
     <!-- metadata -->
     <PostMetadata
       published={published}
+      updated={updated}
+      isHome={true}
       tags={tags}
       showPublished={metaShowPublished}
       showCategory={showCategory}
@@ -215,6 +218,7 @@ const minutes = remarkPluginFrontmatter.minutes;
     {!showTagsAtBottom && (
       <PostStats
         published={published}
+        updated={updated}
         words={words}
         minutes={minutes}
         showPublished={statsShowPublished}

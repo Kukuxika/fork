@@ -59,6 +59,8 @@ const {
 const path = customPath || (id ? `/posts/${id}` : "");
 const visibleTags =
 	typeof maxTags === "number" ? tags?.slice(0, maxTags) : tags;
+const primaryDate = isHome ? (updated ?? published) : published;
+const showRecentUpdate = isHome && updated !== undefined;
 ---
 
 <div
@@ -85,13 +87,13 @@ const visibleTags =
       <div class="flex items-center">
         <div class="meta-icon">
           <Icon
-            name="material-symbols:calendar-today-outline-rounded"
+            name={showRecentUpdate ? "material-symbols:edit-calendar-outline-rounded" : "material-symbols:calendar-today-outline-rounded"}
             class="text-xl"
           />
         </div>
-        <span class="text-50 text-sm font-medium">
-          {formatDateToYYYYMMDD(published)}
-        </span>
+        <time datetime={primaryDate.toISOString()} class="text-50 text-sm font-medium">
+          {showRecentUpdate && i18n(I18nKey.lastModifiedPrefix)}{formatDateToYYYYMMDD(primaryDate)}
+        </time>
       </div>
     )
   }

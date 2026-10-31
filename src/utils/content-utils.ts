@@ -2,36 +2,28 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils";
+import { comparePostsByRecentUpdate } from "./post-sort";
 
-// // Retrieve posts and sort them by publication date
+// 首页、分页和文章导航共用：置顶优先，其次按最近更新日期倒序。
 async function getRawSortedPosts() {
 	const allBlogPosts = await getCollection("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
 
-	const sorted = allBlogPosts.sort((a, b) => {
-		// 首先按置顶状态排序，置顶文章在前
-		if (a.data.pinned && !b.data.pinned) return -1;
-		if (!a.data.pinned && b.data.pinned) return 1;
-
-		// 如果置顶状态相同，则按发布日期排序
-		const dateA = new Date(a.data.published);
-		const dateB = new Date(b.data.published);
-		return dateA > dateB ? -1 : 1;
-	});
-	return sorted;
+	return allBlogPosts.sort(comparePostsByRecentUpdate);
 }
 
 export async function getSortedPosts(): Promise<CollectionEntry<"posts">[]> {
 	const sorted = await getRawSortedPosts();
 
-	for (let i = 1; i < sorted.length; i++) {
-		sorted[i].data.nextSlug = sorted[i - 1].id;
-		sorted[i].data.nextTitle = sorted[i - 1].data.title;
-	}
-	for (let i = 0; i < sorted.length - 1; i++) {
-		sorted[i].data.prevSlug = sorted[i + 1].id;
-		sorted[i].data.prevTitle = sorted[i + 1].data.title;
+	for (const [index, post] of sorted.entries()) {
+		const previous = sorted[index - 1];
+		const next = sorted[index + 1];
+		// 每次重新排序时也清空首尾边界，避免开发时更新文章后残留旧链接。
+		post.data.nextSlug = previous?.id ?? "";
+		post.data.nextTitle = previous?.data.title ?? "";
+		post.data.prevSlug = next?.id ?? "";
+		post.data.prevTitle = next?.data.title ?? "";
 	}
 
 	return sorted;

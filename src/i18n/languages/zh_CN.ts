@@ -336,7 +336,7 @@ export const zh_CN: Translation = {
 	[Key.atomCopied]: "Atom 链接已复制到剪贴板！",
 
 	//最后编辑时间卡片
-	[Key.lastModifiedPrefix]: "最后更新于 ",
+	[Key.lastModifiedPrefix]: "最近更新于 ",
 	[Key.lastModifiedOutdated]: "部分内容可能已过时",
 	[Key.lastModifiedDaysAgo]: "距今已过 {days} 天",
 	[Key.year]: "年",
