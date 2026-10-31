@@ -5,7 +5,7 @@ description: 测试模板功能
 tags:
   - 家人
 category: 测试笔记
-draft: true
+draft: false
 ---
 我们一家
 # 
