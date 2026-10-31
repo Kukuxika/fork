@@ -1,5 +1,5 @@
 ---
-title: 我爱你们
+title: 爸爸妈妈，我爱你们
 published: 2026-10-31
 description: 测试模板功能
 tags:
@@ -7,7 +7,7 @@ tags:
 category: 测试笔记
 draft: true
 ---
+我们一家
+# 
 
-# 我爱你们
-
-在这里开始写作。
+![](images/6e25e11d2be444801c53f6514f63aa04.jpg)
