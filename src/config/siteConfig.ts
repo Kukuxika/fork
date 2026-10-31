@@ -48,7 +48,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "personal blog",
 
 	// 站点 URL
-	site_url: "https://marcus.cn",
+	site_url: "https://marcus12138.com",
 
 	// 站点描述
 	description: "Marcus的个人博客",

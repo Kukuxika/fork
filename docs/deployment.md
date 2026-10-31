@@ -2,7 +2,9 @@
 
 源码仓库：https://github.com/Kukuxika/fork  
 生产分支：`master`  
-正式域名：`https://marcus.cn`
+正式域名：`https://marcus12138.com`
+
+备用访问地址：https://fork-cjf.pages.dev
 
 ## Cloudflare Pages 首次部署
 
@@ -23,14 +25,14 @@
 
 保留完整的 `pnpm build` 命令，才能生成 Pagefind 搜索索引。部署成功后，以控制台返回的实际 `*.pages.dev` 地址为准。Git 集成配置完成后，每次向 `master` 推送都会自动更新网站。仓库里的 GitHub Pages 工作流仅保留手动触发。
 
-## 绑定 marcus.cn
+## 绑定 marcus12138.com
 
-1. 确认 `marcus.cn` 已作为站点添加到同一个 Cloudflare 账号，并且域名注册商的名称服务器已按 Cloudflare 提示设置。
-2. 在 Pages 项目中进入 **自定义域 → 设置自定义域**，添加 `marcus.cn`。
+1. 确认 `marcus12138.com` 已作为站点添加到同一个 Cloudflare 账号，并且域名注册商的名称服务器已按 Cloudflare 提示设置。
+2. 在 Pages 项目中进入 **自定义域 → 设置自定义域**，添加 `marcus12138.com`。
 3. 根据控制台提示检查 DNS 记录；如果根域已有其他网站记录，先确认原站是否需要保留。
-4. 等待域名和 HTTPS 证书状态变为有效，再访问 `https://marcus.cn` 验证首页、文章和搜索。
+4. 等待域名和 HTTPS 证书状态变为有效，再访问 `https://marcus12138.com` 验证首页、文章和搜索。
 
-不要只手动添加 DNS 而跳过 Pages 的自定义域绑定。`src/config/siteConfig.ts` 中的 `site_url` 已配置为 `https://marcus.cn`，用于 canonical、RSS 和站点地图。
+不要只手动添加 DNS 而跳过 Pages 的自定义域绑定。`src/config/siteConfig.ts` 中的 `site_url` 已配置为 `https://marcus12138.com`，用于 canonical、RSS 和站点地图。
 
 官方参考：[Pages 构建配置](https://developers.cloudflare.com/pages/configuration/build-configuration/)、[Wrangler 配置](https://developers.cloudflare.com/pages/functions/wrangler-configuration/)、[自定义域名](https://developers.cloudflare.com/pages/configuration/custom-domains/)。
 
