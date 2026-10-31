@@ -1,6 +1,7 @@
 ---
 title: 测试4：好多bug
 published: 2026-10-31
+updated: 2026-10-31
 description: ""
 tags:
   - 测试
@@ -11,4 +12,3 @@ draft: false
 # obsidian-sync-test4
 
 在这里开始写作。.
-updated: 2026-10-31
