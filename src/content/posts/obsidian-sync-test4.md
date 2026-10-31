@@ -1,5 +1,5 @@
 ---
-title: obsidian-sync-test4
+title: 好多bug
 published: 2026-10-31
 description: ""
 tags:
