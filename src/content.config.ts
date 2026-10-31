@@ -60,7 +60,10 @@ type ContentCollection<T> = CollectionConfig<
 >;
 
 const postsCollection: ContentCollection<PostData> = defineCollection({
-	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/posts" }),
+	loader: glob({
+		pattern: ["**/*.{md,mdx}", "!templates/**"],
+		base: "./src/content/posts",
+	}),
 	schema: z.object({
 		title: z.string(),
 		published: z.date(),
