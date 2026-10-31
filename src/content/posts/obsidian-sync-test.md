@@ -5,7 +5,6 @@ description: 欢迎来到 Marcus 的个人博客，从这里开始记录技术�
 image: ""
 tags:
   - 博客
-  - 随笔
 category: 测试笔记
 pinned: false
 draft: false
