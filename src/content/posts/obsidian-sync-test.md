@@ -1,5 +1,5 @@
 ---
-title: 我的第一篇 Obsidian 同步文章
+title: 敏敏子，玉平你们能看到吗
 published: 2026-10-31
 description: 测试通过 Obsidian、GitHub 和 Cloudflare 自动发布博客文章。
 tags:
@@ -9,7 +9,7 @@ category: 技术学习
 draft: false
 ---
 
-# 敏敏子，玉平你们能看到吗
+# 我自己的网站搭建成功了嘻嘻
 
 这是我使用 Obsidian 发布的第一篇测试文章。
 
