@@ -1,6 +1,6 @@
 ---
 title: "{{title}}"
-published: "{{date:YYYY-MM-DD}}"
+published: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 updated:
 description: ""
 tags: []
@@ -9,8 +9,5 @@ draft: true
 ---
 
 # {{title}}
-
-在这里开始写作。
-# blog-article
 
 在这里开始写作。
