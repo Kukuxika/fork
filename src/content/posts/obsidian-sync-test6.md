@@ -10,4 +10,4 @@ draft: false
 
 # obsidian-sync-test6
 
-在这里开始写作。啊啊啊啊
+在这里开始写作。啊啊啊
