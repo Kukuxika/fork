@@ -5,8 +5,9 @@ description: 测试通过 Obsidian、GitHub 和 Cloudflare 自动发布博客文
 tags:
   - Obsidian
   - 博客
-category: 测试笔记
+category: 测试bug
 draft: false
+updated: 2026-11-03T16:19:17+08:00
 ---
 
 # 我自己的网站搭建成功了

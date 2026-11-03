@@ -5,11 +5,12 @@ description: 欢迎来到 Marcus 的个人博客，从这里开始记录技术�
 image: ""
 tags:
   - 博客
-category: 测试笔记
+category: 测试bug
 pinned: false
 draft: false
 lang: zh_CN
 slug: hello-world
+updated: 2026-11-03T16:19:02+08:00
 ---
 
 你好，我是 Marcus，欢迎来到我的个人博客。
